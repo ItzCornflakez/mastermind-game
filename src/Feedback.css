@@ -1,0 +1,19 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    background-color: rgb(176, 168, 168);
+    padding: 10px;
+    border-radius: 10%;
+  }
+  
+  .feedback-row {
+    display: flex;
+  }
+  
+  .feedback-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 2px;
+  }

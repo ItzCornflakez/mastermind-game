@@ -1,0 +1,46 @@
+.board {
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    border-style: groove;
+    border-radius: 10px;
+    max-width: max-content;
+    margin:auto;
+    margin-top:10px
+  }
+  
+  .board-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .board-row {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .row-number {
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .submit-button, .restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 10px;
+  }
+
+  .active-row {
+    background-color: orange; /* Style for the active row */
+  }
+  
+  .guessed-row {
+    opacity: 0.5; /* Darken the guessed rows */
+    background-color: rgb(180, 71, 162);
+  }

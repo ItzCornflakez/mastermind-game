@@ -1,2 +1,2 @@
-# python-mastermind
-A simple hobby python project recreating the board game mastermind.
+# mastermind-game
+A simple hobby project recreating the board game mastermind.

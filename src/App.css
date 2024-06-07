@@ -4,4 +4,20 @@
 
 h1 {
   margin: 20px;
+  max-width: max-content;
+  margin:auto;
+}
+
+.MainMenu {
+  max-width: max-content;
+  margin:auto;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+}
+
+.returnButton {
+  margin-top: 200px;
 }

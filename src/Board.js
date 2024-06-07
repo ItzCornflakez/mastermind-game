@@ -10,8 +10,20 @@ const Board = () => {
       locked: false,
     }))
   );
+
+  const generateRandomAnswer = () => {
+    // Generate a random answer for the AI
+    // Placeholder logic for demonstration
+    return Array(4)
+      .fill(null)
+      .map(() => {
+        const colors = ['red', 'green', 'blue', 'yellow', 'black']; // Possible colors
+        return colors[Math.floor(Math.random() * colors.length)];
+      });
+  };
+
   const [currentRow, setCurrentRow] = useState(0);
-  const [aiAnswer, setAiAnswer] = useState(Array(4).fill(null)); // AI's answer
+  const [aiAnswer, setAiAnswer] = useState(generateRandomAnswer()); // AI's answer
 
   const handleDrop = (index, colors) => {
     const newRows = [...rows];
@@ -51,16 +63,7 @@ const Board = () => {
     }
   };
 
-  const generateRandomAnswer = () => {
-    // Generate a random answer for the AI
-    // Placeholder logic for demonstration
-    return Array(4)
-      .fill(null)
-      .map(() => {
-        const colors = ['red', 'green', 'blue', 'yellow', 'black']; // Possible colors
-        return colors[Math.floor(Math.random() * colors.length)];
-      });
-  };
+  
 
   const handleSubmit = () => {
     if (currentRow < 10) {

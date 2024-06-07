@@ -1,0 +1,12 @@
+.shape-pool {
+    display: flex;
+    justify-content: center; /* Align shapes horizontally at the center */
+    align-items: center; /* Align shapes vertically at the center */
+    flex-wrap: nowrap; /* Prevent shapes from wrapping to the next line */
+    margin-top: 20px;
+
+    background-color: rgb(200, 205, 208);
+    padding: 10px;
+    max-width: max-content;
+    margin:auto;
+}
